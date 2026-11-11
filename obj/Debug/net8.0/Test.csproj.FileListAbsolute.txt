@@ -1,0 +1,14 @@
+/home/mezny/Documents/.Net/Scratch/Test/bin/Debug/net8.0/Test
+/home/mezny/Documents/.Net/Scratch/Test/bin/Debug/net8.0/Test.deps.json
+/home/mezny/Documents/.Net/Scratch/Test/bin/Debug/net8.0/Test.runtimeconfig.json
+/home/mezny/Documents/.Net/Scratch/Test/bin/Debug/net8.0/Test.dll
+/home/mezny/Documents/.Net/Scratch/Test/bin/Debug/net8.0/Test.pdb
+/home/mezny/Documents/.Net/Scratch/Test/obj/Debug/net8.0/Test.GeneratedMSBuildEditorConfig.editorconfig
+/home/mezny/Documents/.Net/Scratch/Test/obj/Debug/net8.0/Test.AssemblyInfoInputs.cache
+/home/mezny/Documents/.Net/Scratch/Test/obj/Debug/net8.0/Test.AssemblyInfo.cs
+/home/mezny/Documents/.Net/Scratch/Test/obj/Debug/net8.0/Test.csproj.CoreCompileInputs.cache
+/home/mezny/Documents/.Net/Scratch/Test/obj/Debug/net8.0/Test.dll
+/home/mezny/Documents/.Net/Scratch/Test/obj/Debug/net8.0/refint/Test.dll
+/home/mezny/Documents/.Net/Scratch/Test/obj/Debug/net8.0/Test.pdb
+/home/mezny/Documents/.Net/Scratch/Test/obj/Debug/net8.0/Test.genruntimeconfig.cache
+/home/mezny/Documents/.Net/Scratch/Test/obj/Debug/net8.0/ref/Test.dll

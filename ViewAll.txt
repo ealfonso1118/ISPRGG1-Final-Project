@@ -1,0 +1,24 @@
+using System;
+
+namespace Test;
+
+public class ViewAll
+{
+    public static void run()
+    {
+        Console.WriteLine("View all students.\n");
+
+        if (Student.students.Count == 0)
+        {
+            Console.WriteLine("No students found.");
+            return;
+        }
+
+        foreach (var student in Student.students)
+        {
+            Console.WriteLine($"ID: {student.ID}");
+            Console.WriteLine($"Name: {student.LastName}, {student.FirstName} {student.MiddleName}");
+            Console.WriteLine();
+        }
+    }
+}
