@@ -13,8 +13,8 @@ public class FindStudent
 
         if (studentID.ContainsKey(id))
         {
-            string lastName = studentID[id];
-            Console.WriteLine($"Student found: {lastName}");
+            string fullInfo = studentID[id];
+            Console.WriteLine($"Student found: {fullInfo}");
         }
         else
         {
