@@ -4,21 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Finals_ISPRGG1 {
+namespace Finals_ISPRGG1
+{
 
-    internal static class AddStudent {
+    internal static class AddStudent
+    {
 
-        public static void Run(List<Dictionary<string, string>> students) {
+        public static void Run(List<Dictionary<string, string>> students)
+        {
 
             Console.WriteLine("Add a Studendt.\n");
 
             string lastName;
-            while (true) {
+            while (true)
+            {
 
                 Console.Write("Last name: ");
                 lastName = Console.ReadLine();
 
-                if (!string.IsNullOrWhiteSpace(lastName) && lastName.Length <= 20) {
+                if (!string.IsNullOrWhiteSpace(lastName) && lastName.Length <= 20)
+                {
 
                     break;
                 }
@@ -27,12 +32,14 @@ namespace Finals_ISPRGG1 {
             }
 
             string firstName;
-            while (true) {
+            while (true)
+            {
 
                 Console.Write("First name: ");
                 firstName = Console.ReadLine();
 
-                if (!string.IsNullOrWhiteSpace(firstName) && firstName.Length <= 20) {
+                if (!string.IsNullOrWhiteSpace(firstName) && firstName.Length <= 20)
+                {
 
                     break;
                 }
@@ -41,12 +48,14 @@ namespace Finals_ISPRGG1 {
             }
 
             string middleName;
-            while (true) {
+            while (true)
+            {
 
                 Console.Write("Middle name: ");
                 middleName = Console.ReadLine();
 
-                if (!string.IsNullOrWhiteSpace(middleName) && middleName.Length <= 20) {
+                if (!string.IsNullOrWhiteSpace(middleName) && middleName.Length <= 20)
+                {
 
                     break;
                 }
@@ -58,21 +67,26 @@ namespace Finals_ISPRGG1 {
             string id;
             bool validID;
 
-            while (true) {
+            while (true)
+            {
 
                 Console.Write("ID number: ");
                 id = Console.ReadLine();
 
                 validID = true;
 
-                if (string.IsNullOrWhiteSpace(id) || id.Length != 8) {
+                if (string.IsNullOrWhiteSpace(id) || id.Length != 8)
+                {
                     validID = false;
                 }
-                else {
+                else
+                {
 
-                    for (int i = 0; i < id.Length; i++) {
+                    for (int i = 0; i < id.Length; i++)
+                    {
 
-                        if (id[i] < '0' || id[i] > '9') {
+                        if (id[i] < '0' || id[i] > '9')
+                        {
 
                             validID = false;
                             break;
@@ -80,7 +94,8 @@ namespace Finals_ISPRGG1 {
                     }
                 }
 
-                if (validID) {
+                if (validID)
+                {
 
                     break;
                 }
