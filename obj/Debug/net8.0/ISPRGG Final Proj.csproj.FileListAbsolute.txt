@@ -26,3 +26,4 @@
 /home/mezny/Documents/.Net/Scratch/ISPRGG Final Project/obj/Debug/net8.0/ISPRGG Final Proj.pdb
 /home/mezny/Documents/.Net/Scratch/ISPRGG Final Project/obj/Debug/net8.0/ISPRGG Final Proj.genruntimeconfig.cache
 /home/mezny/Documents/.Net/Scratch/ISPRGG Final Project/obj/Debug/net8.0/ref/ISPRGG Final Proj.dll
+/home/mezny/Documents/.Net/Scratch/ISPRGG Final Project/obj/Debug/net8.0/ISPRGG Final Proj.sourcelink.json

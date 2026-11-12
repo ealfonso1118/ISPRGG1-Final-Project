@@ -1,75 +1,124 @@
 ﻿using System;
+using System.ComponentModel;
 
-class Program
+namespace Finals_ISPRGG1
 {
 
-    static void Main(string[] args)
+    class Program
     {
-        char command;
-        var studentList = new List<Dictionary<string, string>>();
 
-        do
+        static void Main(string[] args)
         {
-            Console.WriteLine("CRUD Final Machine Project v1 (Quinones)");
-            Console.WriteLine("---------------------------------------------------------------------------------");
-            Console.WriteLine("A-add a student              E-dit a student                 D-elete a student");
-            Console.WriteLine("V-iew all student            F-ind a student");
-            Console.WriteLine("L-oad data from file         S-ave data to file");
-            Console.WriteLine("Q-uit the program");
-            Console.WriteLine("---------------------------------------------------------------------------------");
 
-            Console.Write("Command: ");
-            command = Console.ReadLine()[0];
-            Console.Clear();
 
-            switch (char.ToUpper(command))
+            char command;
+            List<Dictionary<string, string>> studentList = new List<Dictionary<string, string>>();
+
+            do
             {
-                case 'A':
-                    Dictionary<string, string> student = new Dictionary<string, string>();
-                    AddStudent.Run(student);
-                    studentList.Add(student);
-                    break;
 
-                case 'E':
+                Console.WriteLine("CRUD Final Machine Project v1 (Quinones & Alfonso)");
+                Console.WriteLine("---------------------------------------------------------------------------------");
+                Console.WriteLine("A-add a student              E-dit a student                 D-elete a student");
+                Console.WriteLine("V-iew all student            F-ind a student");
+                Console.WriteLine("L-oad data from file         S-ave data to file");
+                Console.WriteLine("Q-uit the program");
+                Console.WriteLine("---------------------------------------------------------------------------------");
 
-                    break;
+                Console.Write("Command: ");
+                string input = Console.ReadLine();
 
-                case 'V':
-                    //ViewAll.run();
-                    Console.WriteLine("View all students.\n");
-                    Console.WriteLine(string.Join("\n", studentList[0]["lastName"] + " " + studentList[0]["firstName"] + " " + studentList[0]["middleName"] + "\n" + studentList[0]["id"]));
-                    Console.ReadKey();
-                    break;
+                if (string.IsNullOrWhiteSpace(input))
+                {
 
-                case 'F':
+                    command = '\0';
+                }
+                else
+                {
 
-                    break;
+                    command = input[0];
+                }
+                Console.Clear();
 
-                case 'L':
+                switch (char.ToUpper(command))
+                {
 
-                    break;
+                    case 'A':
 
-                case 'S':
+                        AddStudent.Run(studentList);
+                        break;
 
-                    break;
+                    case 'E':
 
-                case 'D':
+                        break;
 
-                    break;
+                    case 'V':
 
-                case 'Q':
+                        Console.Clear();
+                        Console.WriteLine("View all Students.\n");
 
-                    Console.WriteLine("Quit Proram!");
-                    break;
+                        if (studentList.Count == 0)
+                        {
 
-                default:
+                            Console.WriteLine("No Student records found.");
+                        }
+                        else
+                        {
 
-                    Console.Clear();
-                    Console.WriteLine("Invalid Input!");
-                    break;
-            }
+                            foreach (Dictionary<string, string> student in studentList)
+                            {
+                                Console.WriteLine(
+                                    student["lastName"] + " " +
+                                    student["firstName"] + " " +
+                                    student["middleName"] + " " +
+                                    student["ID"]
+                                );
 
-        } while (char.ToUpper(command) != 'Q');
+                                Console.WriteLine("--------------------------------");
+                            }
 
+                            Console.WriteLine("Total Students: " + studentList.Count);
+                        }
+
+                        Console.Write("Press any key to continue...");
+                        Console.ReadKey();
+                        Console.Clear();
+                        break;
+
+                    case 'F':
+
+                        break;
+
+                    case 'L':
+
+                        break;
+
+                    case 'S':
+
+                        break;
+
+                    case 'D':
+
+                        break;
+
+                    case 'Q':
+
+                        Console.WriteLine("Quit Proram!");
+                        break;
+
+                    default:
+
+                        Console.Clear();
+                        Console.WriteLine("Invalid Input!");
+                        Console.Write("Press any key to continue...");
+                        Console.ReadKey();
+                        Console.Clear();
+
+                        break;
+                }
+
+            } while (char.ToUpper(command) != 'Q');
+
+        }
     }
 }

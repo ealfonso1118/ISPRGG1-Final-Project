@@ -1,95 +1,106 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-internal static class AddStudent
-{
-    public static void Run(Dictionary<string, string> student)
-    {
-        Console.WriteLine("Add a Studendt.\n");
+namespace Finals_ISPRGG1 {
 
-        string lastName;
-        while (true)
-        {
-            Console.Write("Last name: ");
-            lastName = Console.ReadLine();
+    internal static class AddStudent {
 
-            if (!string.IsNullOrWhiteSpace(lastName) && lastName.Length <= 20)
-            {
-                break;
+        public static void Run(List<Dictionary<string, string>> students) {
+
+            Console.WriteLine("Add a Studendt.\n");
+
+            string lastName;
+            while (true) {
+
+                Console.Write("Last name: ");
+                lastName = Console.ReadLine();
+
+                if (!string.IsNullOrWhiteSpace(lastName) && lastName.Length <= 20) {
+
+                    break;
+                }
+
+                Console.WriteLine("Maximum of 20 characters only. Try again.");
             }
 
-            Console.WriteLine("Maximum of 20 characters only. Try again.");
-        }
+            string firstName;
+            while (true) {
 
-        string firstName;
-        while (true)
-        {
-            Console.Write("First name: ");
-            firstName = Console.ReadLine();
+                Console.Write("First name: ");
+                firstName = Console.ReadLine();
 
-            if (!string.IsNullOrWhiteSpace(firstName) && firstName.Length <= 20)
-            {
-                break;
+                if (!string.IsNullOrWhiteSpace(firstName) && firstName.Length <= 20) {
+
+                    break;
+                }
+
+                Console.WriteLine("Maximum of 20 characters only. Try again.");
             }
 
-            Console.WriteLine("Maximum of 20 characters only. Try again.");
-        }
+            string middleName;
+            while (true) {
 
-        string middleName;
-        while (true)
-        {
-            Console.Write("Middle name: ");
-            middleName = Console.ReadLine();
+                Console.Write("Middle name: ");
+                middleName = Console.ReadLine();
 
-            if (!string.IsNullOrWhiteSpace(middleName) && middleName.Length <= 20)
-            {
-                break;
+                if (!string.IsNullOrWhiteSpace(middleName) && middleName.Length <= 20) {
+
+                    break;
+                }
+
+                Console.WriteLine("Maximum of 20 characters only. Try again.");
             }
 
-            Console.WriteLine("Maximum of 20 characters only. Try again.");
-        }
 
-        string id;
-        bool validID;
+            string id;
+            bool validID;
 
-        while (true)
-        {
-            Console.Write("ID number: ");
-            id = Console.ReadLine();
+            while (true) {
 
-            validID = true;
+                Console.Write("ID number: ");
+                id = Console.ReadLine();
 
-            if (string.IsNullOrWhiteSpace(id) || id.Length != 8)
-            {
-                validID = false;
-            }
-            else
-            {
-                for (int i = 0; i < id.Length; i++)
-                {
-                    if (id[i] < '0' || id[i] > '9')
-                    {
-                        validID = false;
-                        break;
+                validID = true;
+
+                if (string.IsNullOrWhiteSpace(id) || id.Length != 8) {
+                    validID = false;
+                }
+                else {
+
+                    for (int i = 0; i < id.Length; i++) {
+
+                        if (id[i] < '0' || id[i] > '9') {
+
+                            validID = false;
+                            break;
+                        }
                     }
                 }
+
+                if (validID) {
+
+                    break;
+                }
+
+                Console.WriteLine("ID must contain exactly 8 digits. Numbers only. Try again.");
             }
 
-            if (validID)
-            {
-                break;
-            }
+            Dictionary<string, string> student = new Dictionary<string, string>();
 
-            Console.WriteLine("ID must contain exactly 8 digits. Numbers only. Try again.");
+            student["lastName"] = lastName;
+            student["firstName"] = firstName;
+            student["middleName"] = middleName;
+            student["ID"] = id;
+
+            students.Add(student);
+
+            Console.WriteLine("\nStudent information successfully added!");
+            Console.Write("Press any key to continue...");
+            Console.ReadKey();
+            Console.Clear();
         }
-
-        student.Add("lastName", lastName);
-        student.Add("firstName", firstName);
-        student.Add("middleName", middleName);
-        student.Add("id", id);
-
-        Console.WriteLine("\nStudent information collected!");
-        Console.Write("Press any key to continue...");
-        Console.ReadKey();
-        Console.Clear();
     }
 }
