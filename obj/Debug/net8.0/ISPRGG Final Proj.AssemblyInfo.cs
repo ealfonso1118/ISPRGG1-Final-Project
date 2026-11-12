@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ISPRGG Final Proj")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90876bbf0597975d1c299c05b706dc4408a75252")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd84a9b70bdcc5ee509417c587a40aa938a5e152")]
 [assembly: System.Reflection.AssemblyProductAttribute("ISPRGG Final Proj")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ISPRGG Final Proj")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

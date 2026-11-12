@@ -1,39 +1,40 @@
 using System;
 
-namespace ISPRGG_Final_Proj;
-
-internal static class ViewAllStudents
+namespace Finals_ISPRGG1
 {
-    public static void Run(List<Dictionary<string, string>> studentList)
+    internal static class ViewAllStudents
     {
-        Console.Clear();
-        Console.WriteLine("View all Students.\n");
-
-        if (studentList.Count == 0)
+        public static void Run(List<Dictionary<string, string>> studentList)
         {
+            Console.Clear();
+            Console.WriteLine("View all Students.\n");
 
-            Console.WriteLine("No Student records found.");
-        }
-        else
-        {
-
-            foreach (Dictionary<string, string> student in studentList)
+            if (studentList.Count == 0)
             {
-                Console.WriteLine(
-                    student["lastName"] + " " +
-                    student["firstName"] + " " +
-                    student["middleName"] + " " +
-                    student["ID"]
-                );
 
-                Console.WriteLine("--------------------------------");
+                Console.WriteLine("No Student records found.");
+            }
+            else
+            {
+
+                foreach (Dictionary<string, string> student in studentList)
+                {
+                    Console.WriteLine(
+                        student["lastName"] + " " +
+                        student["firstName"] + " " +
+                        student["middleName"] + " " +
+                        student["ID"]
+                    );
+
+                    Console.WriteLine("--------------------------------");
+                }
+
+                Console.WriteLine("Total Students: " + studentList.Count);
             }
 
-            Console.WriteLine("Total Students: " + studentList.Count);
+            Console.Write("Press any key to continue...");
+            Console.ReadKey();
+            Console.Clear();
         }
-
-        Console.Write("Press any key to continue...");
-        Console.ReadKey();
-        Console.Clear();
     }
 }

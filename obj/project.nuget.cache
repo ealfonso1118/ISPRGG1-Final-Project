@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MPDnthKTHhc=",
+  "dgSpecHash": "EH+IZDu4X1E=",
   "success": true,
-  "projectFilePath": "/home/mezny/Documents/.Net/Scratch/ISPRGG Final Project/ISPRGG Final Proj.csproj",
+  "projectFilePath": "/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/Finals_ISPRGG1.csproj",
   "expectedPackageFiles": [
     "/home/mezny/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.32/microsoft.aspnetcore.app.ref.8.0.32.nupkg.sha512",
     "/home/mezny/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.32/microsoft.netcore.app.host.linux-x64.8.0.32.nupkg.sha512"

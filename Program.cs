@@ -13,6 +13,8 @@ namespace Finals_ISPRGG1
 
             char command;
             List<Dictionary<string, string>> studentList = new List<Dictionary<string, string>>();
+            Dictionary<string, string> studentID = new Dictionary<string, string>();
+
 
             do
             {
@@ -45,7 +47,7 @@ namespace Finals_ISPRGG1
 
                     case 'A':
 
-                        AddStudent.Run(studentList);
+                        AddStudent.Run(studentList, studentID);
                         break;
 
                     case 'E':
@@ -59,14 +61,15 @@ namespace Finals_ISPRGG1
 
                     case 'F':
 
+                        FindStudent.Run(studentList, studentID);
                         break;
 
                     case 'L':
-
+                        //StreamReader
                         break;
 
                     case 'S':
-
+                        //StreamWriter
                         break;
 
                     case 'D':

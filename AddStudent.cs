@@ -10,10 +10,10 @@ namespace Finals_ISPRGG1
     internal static class AddStudent
     {
 
-        public static void Run(List<Dictionary<string, string>> students)
+        public static void Run(List<Dictionary<string, string>> students, Dictionary<string, string> studentID)
         {
 
-            Console.WriteLine("Add a Studendt.\n");
+            Console.WriteLine("Add a Student.\n");
 
             string lastName;
             while (true)
@@ -102,6 +102,9 @@ namespace Finals_ISPRGG1
 
                 Console.WriteLine("ID must contain exactly 8 digits. Numbers only. Try again.");
             }
+
+            string fullInfo = $"{lastName}, {firstName} {middleName}";
+            studentID.Add(id, fullInfo);
 
             Dictionary<string, string> student = new Dictionary<string, string>();
 

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Finals_ISPRGG1/1.0.0": {
+        "runtime": {
+          "Finals_ISPRGG1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Finals_ISPRGG1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

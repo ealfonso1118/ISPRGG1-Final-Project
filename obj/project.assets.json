@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/mezny/Documents/.Net/Scratch/ISPRGG Final Project/ISPRGG Final Proj.csproj",
-      "projectName": "ISPRGG Final Proj",
-      "projectPath": "/home/mezny/Documents/.Net/Scratch/ISPRGG Final Project/ISPRGG Final Proj.csproj",
+      "projectUniqueName": "/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/Finals_ISPRGG1.csproj",
+      "projectName": "Finals_ISPRGG1",
+      "projectPath": "/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/Finals_ISPRGG1.csproj",
       "packagesPath": "/home/mezny/.nuget/packages/",
-      "outputPath": "/home/mezny/Documents/.Net/Scratch/ISPRGG Final Project/obj/",
+      "outputPath": "/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/mezny/.nuget/NuGet/NuGet.Config"

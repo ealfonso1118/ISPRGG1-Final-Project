@@ -1,0 +1,15 @@
+/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/bin/Debug/net8.0/Finals_ISPRGG1
+/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/bin/Debug/net8.0/Finals_ISPRGG1.deps.json
+/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/bin/Debug/net8.0/Finals_ISPRGG1.runtimeconfig.json
+/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/bin/Debug/net8.0/Finals_ISPRGG1.dll
+/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/bin/Debug/net8.0/Finals_ISPRGG1.pdb
+/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/obj/Debug/net8.0/Finals_ISPRGG1.GeneratedMSBuildEditorConfig.editorconfig
+/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/obj/Debug/net8.0/Finals_ISPRGG1.AssemblyInfoInputs.cache
+/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/obj/Debug/net8.0/Finals_ISPRGG1.AssemblyInfo.cs
+/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/obj/Debug/net8.0/Finals_ISPRGG1.csproj.CoreCompileInputs.cache
+/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/obj/Debug/net8.0/Finals_ISPRGG1.sourcelink.json
+/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/obj/Debug/net8.0/Finals_ISPRGG1.dll
+/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/obj/Debug/net8.0/refint/Finals_ISPRGG1.dll
+/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/obj/Debug/net8.0/Finals_ISPRGG1.pdb
+/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/obj/Debug/net8.0/Finals_ISPRGG1.genruntimeconfig.cache
+/home/mezny/Documents/.Net/Scratch/Finals_ISPRGG1/obj/Debug/net8.0/ref/Finals_ISPRGG1.dll
